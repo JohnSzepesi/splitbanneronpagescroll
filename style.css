@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 200vh;
+}
+
+section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+section .side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./img/vinyl.jpg);
+    background-repeat: no-repeat;
+}
+
+/*https://bennettfeely.com/clippy/
+- custom polygon
+*/
+
+section .side#side1 {
+    clip-path: polygon(
+        1% 0%,
+        57% 1%,
+        42% 11%,
+        51% 20%,
+        41% 25%,
+        51% 33%,
+        41% 39%,
+        52% 46%,
+        23% 54%,
+        48% 61%,
+        31% 65%,
+        42% 73%,
+        18% 81%,
+        44% 84%,
+        11% 94%,
+        33% 96%,
+        1% 99%
+    );
+}
+
+section .side#side2 {
+    clip-path: polygon(
+        100% 0,
+        57% 1%,
+        42% 11%,
+        51% 20%,
+        41% 25%,
+        51% 33%,
+        41% 39%,
+        52% 46%,
+        23% 54%,
+        48% 61%,
+        31% 65%,
+        42% 73%,
+        18% 81%,
+        44% 84%,
+        11% 94%,
+        33% 96%,
+        100% 100%
+    );
+}
+
+.contentBx {
+    background: #000;
+    color: #fff;
+    padding: 100px;
+    padding-top: 150vh;
+}
+
+.contentBx h2 {
+    position: relative;
+    font-size: 4em;
+}
+
+.contentBx p {
+    position: relative;
+    font-size: 1.2em;
+}
